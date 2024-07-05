@@ -7,9 +7,9 @@ const Home: React.FC = () => {
   const { isPending, error, data } = useQuery<Province[]>({
     queryKey: ["MainWeatherData"],
     queryFn: () =>
-      fetch(
-        "https://api.berkyasar.dev/wfapi/WeatherForecast/GetProvinces"
-      ).then((res) => res.json()),
+      fetch("http://localhost:5207/wfapi/WeatherForecast/GetProvinces").then(
+        (res) => res.json()
+      ),
   });
 
   if (isPending) return "Loading...";
