@@ -1,4 +1,5 @@
 # WeatherForecastFrontend
+
 This project is the frontend of a Weather Forecast application developed using Vite and React.
 
 ## Installation
@@ -35,6 +36,7 @@ You can access the backend of this project via the following link: [Weather Fore
 ## Demo
 
 You can try out the live demo of the application [here](https://weather.berkyasar.dev/).
+
 **Note:** The data on the demo site may take some time to load.
 
 ## Contributing
