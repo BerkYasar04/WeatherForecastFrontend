@@ -32,6 +32,11 @@ The application will be available at `http://localhost:5173` by default.
 
 You can access the backend of this project via the following link: [Weather Forecast Backend](https://github.com/BerkYasar04/WeatherForecastBackend).
 
+## Demo
+
+You can try out the live demo of the application [here](https://weather.berkyasar.dev/).
+**Note:** The data on the demo site may take some time to load.
+
 ## Contributing
 
 If you wish to contribute, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
