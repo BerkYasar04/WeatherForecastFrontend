@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 interface AppProps {
   merkezId: Int16Array;
@@ -8,6 +9,7 @@ interface AppProps {
   humidity: Int16Array;
   precipitation: DoubleRange;
   eventCode: string;
+  isNavigate: boolean;
 }
 
 const WeatherCard: React.FC<AppProps> = ({
@@ -16,10 +18,19 @@ const WeatherCard: React.FC<AppProps> = ({
   humidity,
   precipitation,
   eventCode,
+  isNavigate
 }: AppProps) => {
+  const navigate = useNavigate();
   return (
     <div className="w-full sm:w-1 md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
-      <div className="max-w-xs flex items-center rounded overflow-hidden shadow-xl bg-gray-200 button">
+      <div
+        className="max-w-xs flex items-center rounded overflow-hidden shadow-xl bg-gray-200 button"
+        onClick={() => {
+          if (isNavigate) {
+            navigate("/detail/" + city);
+          }
+        }}
+      >
         <img
           className="w-[5rem]"
           src={"/events/" + eventCode.toLowerCase() + ".svg"}

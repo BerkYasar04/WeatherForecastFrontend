@@ -27,6 +27,7 @@ const Home: React.FC = () => {
           humidity={data.humidity}
           precipitation={data.precipitation}
           temperature={data.temperature}
+          isNavigate={true}
         />
         // <div
         //   key={index}
